@@ -45,4 +45,4 @@ $custom-colors: (
     'secondary-1100': $secondary-1100,
 );
 
-$theme-colors: map-merge($theme-colors, $cuttom-colors);
+$theme-colors: map-merge($theme-colors, $custom-colors);
