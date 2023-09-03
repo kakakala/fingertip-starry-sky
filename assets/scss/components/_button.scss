@@ -1,0 +1,66 @@
+
+
+.button{
+    padding: 8px 16px;
+    color: $primary-100;
+    background-color: $primary-800;
+    border-radius: 0;
+
+    &:hover{
+        border-color: $primary-700;
+    }
+
+    &:focus{
+        background-color: $primary-1000;
+    }
+
+    &-outline{
+        @extend .button;
+        color: $primary-800;
+        background-color: $secondary-100;
+        border: 1px solid $primary-800;
+
+        &:hover{
+            background-color: $primary-300;
+        }
+
+        &:focus{
+            color: $primary-1000;
+            background-color: $primary-300;
+            border-color: $primary-1000
+            }
+    }
+
+    &-text-dark{
+        @extend .button;
+        color: $secondary-1000;
+        background-color: transparent;
+        border: none;
+        @include pad{
+            width: 100%;
+        }
+
+        &:hover{
+            color: $primary-700;
+        }
+
+        &:focus{
+            color: $primary-800;
+        }
+    }
+
+    &-text-light{
+        @extend .button;
+        color: $primary-100;
+        background-color: transparent;
+        border: none;
+    }
+
+    &:hover{
+        color: $primary-700;
+    }
+
+    &:focus{
+        color: $primary-800;
+    }
+}

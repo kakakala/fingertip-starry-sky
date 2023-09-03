@@ -1,6 +1,10 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import './utils/custom-color';
+@import './utils/mixins';
+
+@import './components/button';
+@import './components/hamburger';
 
 
 @import './layout/header.scss';
