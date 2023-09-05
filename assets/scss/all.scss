@@ -5,6 +5,7 @@
 
 @import './components/button';
 @import './components/hamburger';
+@import './components/side-nav';
 
 
 @import './layout/header.scss';
@@ -12,5 +13,6 @@
 
 
 @import './pages/index.scss';
+@import './pages/reservation';
 
 @import "../../node_modules/bootstrap";
