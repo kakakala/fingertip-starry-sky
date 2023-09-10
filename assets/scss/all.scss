@@ -3,10 +3,13 @@
 @import './utils/custom-color';
 @import './utils/mixins';
 
+@import "../../node_modules/bootstrap";
+
 @import './components/button';
 @import './components/hamburger';
 @import './components/side-nav';
 @import './components/title-font';
+@import './components/custom-card';
 
 
 @import './layout/header.scss';
@@ -16,4 +19,3 @@
 @import './pages/index.scss';
 @import './pages/reservation';
 
-@import "../../node_modules/bootstrap";

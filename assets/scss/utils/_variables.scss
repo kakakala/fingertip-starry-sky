@@ -380,8 +380,10 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   100:100px, //custom
+  80:80px, //custom
   60:60px, //custom
   40:40px, //custom
+  32:32px, //custom
   12:12px, //custom
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -1091,7 +1093,8 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y:                  $spacer * .5 !default;
+// $navbar-padding-y:                  $spacer * .5 !default;
+$navbar-padding-y:                  22px !default; //custom
 $navbar-padding-x:                  null !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;
@@ -1242,8 +1245,10 @@ $placeholder-opacity-min:           .2 !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+// $card-spacer-y:                     $spacer !default;
+$card-spacer-y:                     24px !default; //custom
+// $card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     32px !default; //custom
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
