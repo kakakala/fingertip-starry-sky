@@ -71,7 +71,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   @include pad{
     max-width: 311px;
     height: 376px;
@@ -123,6 +123,21 @@
   @include pad{
     height: 270px;
   }
+}
+
+//swiper
+.swiper-button-prev,.swiper-button-next{
+  padding:8px;
+  background-color: $primary-800;
+  &::after{
+    content: "";
+  }
+}
+
+.swiper-pagination-bullet-active{
+  background-color: $primary-800;
+  transform: scale(1.5);
+  transition: 0.5s;
 }
 
 //map
