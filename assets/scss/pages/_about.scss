@@ -1,0 +1,73 @@
+.about{
+
+    background: $primary-200;
+    text-align: center;
+    letter-spacing: 1px;
+
+    .xlBlock-textGroup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .xlBlock-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        
+    }
+    .title-style{
+        font-weight: 900;
+    }
+    .text-subLine{
+        height: 2px;
+        border: 2px dashed #FFF;
+    }
+    .textGroup-02-text{
+        position: relative;
+        padding-left: 68px;
+        letter-spacing: 3px;
+    }
+    .textGroup-02-text::before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        line-height: 24px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background: #BC8D86;
+        top: 8px;
+        left: 52px;
+    }
+    .sBlock-img{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center center;
+
+    }
+}
+.aboutMap{
+    background-color: transparent;
+
+    .title-subLine{
+        width: 100%;
+        height: 1px;
+        border: 1px solid $primary-600;
+    }
+    .aboutMap-contact a{
+        color: $secondary-600;
+
+    }
+    .qrCode img{
+        width: 100%;
+
+    }
+    .about-map{
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}

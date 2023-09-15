@@ -1,0 +1,160 @@
+
+
+// banner
+.banner-bg{
+  // background-image: url("/assets/images/image26.png");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-color: 
+  // linear-gradient(270deg, #F5F5F5 0%, rgba(255, 255, 255, 0.00) 8.9%), linear-gradient(90deg, #F5F5F5 0.09%, rgba(255, 255, 255, 0.00) 18.3%), linear-gradient(0deg, rgba(253, 241, 240, 0.30) 0%, rgba(253, 241, 240, 0.30)100%);
+  // background-blend-mode: normal, normal, overlay, normal;
+  background: 
+  linear-gradient(270deg, #F5F5F5 0%, rgba(255, 255, 255, 0.00) 8.9%),
+  linear-gradient(90deg, #F5F5F5 0.09%, rgba(255, 255, 255, 0.00) 18.3%),
+  linear-gradient(0deg, rgba(253, 241, 240, 0.30) 0%, rgba(253, 241, 240, 0.30) 100%),
+  url(/assets/images/image26.png),
+  lightgray;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: normal, normal, overlay, normal;
+}
+
+.banner-word{
+  padding-top: 144px;
+  padding-bottom: 392px;
+
+  @include pad{
+    padding-top: 92px;
+    padding-bottom: 437px;
+    text-align: center;
+  }
+}
+
+.banner-title{
+  font-size: 48px;
+  font-weight: 900;
+  color: $primary-1000;
+
+  @include pad{
+    font-size: 36px;
+  }
+}
+
+//尋找星空
+.nail-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  font-family: "Noto Serif TC";
+  color: $primary-100;
+  font-size: 24px;
+  width: 354px;
+  height: 460px;
+  padding-bottom: 40px;
+  background: linear-gradient(0deg, rgba(111, 43, 33, 0.50) 0%, rgba(0, 0, 0, 0.00) 27.83%),url(/assets/images/image\ 23.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-2{
+    @extend .nail-items;
+    background: linear-gradient(0deg, rgba(111, 43, 33, 0.50) 0%, rgba(0, 0, 0, 0.00) 27.83%),url(/assets/images/image\ 24.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  &-3{
+    @extend .nail-items;
+    background: linear-gradient(0deg, rgba(111, 43, 33, 0.50) 0%, rgba(0, 0, 0, 0.00) 27.83%),url(/assets/images/image\ 25.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include pad{
+    max-width: 311px;
+    height: 376px;
+  }
+}
+
+//促銷優惠
+.discount{
+  position: relative;
+  
+  @include pad{
+    padding-bottom: 32px;
+    border-bottom: 1px solid $primary-800;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: $primary-800;
+    top: 50%;
+    left: 64px;
+    transform: translateY(-50%);
+    @include pad{
+      display: none;
+    }
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: $primary-800;
+    top: 50%;
+    right: 64px;
+    transform: translateY(-50%);
+    @include pad{
+      display: none;
+    }
+  }
+}
+
+//星落何方
+.swiper img{
+
+  height: 600px;
+
+  @include pad{
+    height: 270px;
+  }
+}
+
+//swiper
+.swiper-button-prev,.swiper-button-next{
+  padding:8px;
+  background-color: $primary-800;
+  &::after{
+    content: "";
+  }
+}
+
+.swiper-pagination-bullet-active{
+  background-color: $primary-800;
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+//map
+map img{
+  height: 400px;
+  object-fit: cover;
+
+  @include pad{
+    height: 250px;
+  }
+}
+
+//聽聽他們怎麼說
+.review{
+  
+  &-people{
+    width: 40px;
+    height: 40px;
+  }
+}

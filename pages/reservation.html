@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- 側邊欄 -->
+    <nav class="side-nav d-flex flex-column ps-4">
+        <h1>
+            <a href="./index.html">
+                <img class="mt-4" src="../assets/images/Logo.svg" alt="logo">
+            </a>
+        </h1>
+        <div class="side-nav-user mx-auto mt-3">
+            <img class="rounded-circle" src="../assets/images/user.jpg" alt="user">
+            <p class="fw-bolder text-center text-secondary-1100 mt-3"><span class="letter-spacing">歡迎您</span>，Vivi</p>
+        </div>
+        <a href="#" class="side-nav-link d-flex align-items-center mt-4">
+            <span class="material-icons me-2">
+                info
+            </span>
+            <p class="fw-bolder mb-0">預約資訊</p>
+        </a>
+        <a href="#" class="side-nav-link d-flex align-items-center mt-4">
+            <span class="material-icons me-2">
+                face_6
+                </span>
+            <p class="fw-bolder mb-0">個人資料</p>
+        </a>
+        <a href="#" class="side-nav-link d-flex align-items-center mt-4">
+            <span class="material-icons me-2">
+                exit_to_app
+                </span>
+            <p class="fw-bolder mb-0">登出</p>
+        </a>
+    </nav>
+
+
+    <!-- 中間部分 -->
+    <div class="main">
+        <div class="container">
+            <div class="d-flex align-items-center ms-5 pt-60 text-primary-1000">
+                <span class="material-icons fs-2 me-2">
+                    edit_calendar
+                </span>
+                <h2 class="fs-2 fw-bolder">預約資訊</h2>
+            </div>
+            <p class="fw-bolder ms-60 pt-4">您有一筆預約</p>
+            <div class="row">
+                <div class="col-7">
+                    <div class="border border-2 border-primary-500 ms-60 p-4 bg-primary-100">
+                        <div class="d-flex justify-content-between">
+                            <ul class="list-unstyled text-secondary-1100 mb-0">
+                                <li class="mb-2">預約編號 : #011</li>
+                                <li class="mb-2">預約時間 : 2023年9月10日 14:00</li>
+                                <li class="mb-2">預約項目 : 凝膠美甲+基礎保養</li>
+                                <li class="mb-2">預約款式 : 時尚款-F05</li>
+                                <li class="mb-0">施作時間 : 3.5~4小時</li>
+                            </ul>
+                            <div class="d-flex flex-column my-auto">
+                                <button class="button mb-5" type="button">
+                                    修改預約
+                                </button>
+                                <button class="button" type="button">
+                                    取消預約
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="main">
+        <div class="container">
+            <footer class="footer-border text-center py-2 fixed-bottom bg-primary-900 text-primary-100">© KFJ NAIL 2032</footer>
+        </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
