@@ -1,0 +1,53 @@
+.serviceBg{
+    letter-spacing: 2px;
+}
+.serviceBlock{
+    padding-left: 200px;
+    padding-right: 200px;
+
+    @media (max-width: 1399.98px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    @media (max-width: 1199.98px){
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @include pad{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+.service-card{
+    width: 100%;
+    height: auto;
+    background: #FFF;
+    border-radius: 10px;
+    img{
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px 0 0 10px;
+
+        @include mobile{
+            border-radius: 10px 10px 0 0;
+        }
+    }
+
+}
+.serviceCard-link-text{
+    color: aqua;
+}
+.serviceCard-link-text a::after{
+            
+    font-family: "Material Icons";
+    content: "\e157";
+    width: 16px;
+    position: relative;
+    top: 2px;
+    color: $secondary-1100;
+    display: inline-block;
+    transform: rotate(313deg);
+}
+

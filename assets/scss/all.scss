@@ -2,6 +2,7 @@
 @import './utils/variables';
 @import './utils/custom-color';
 @import './utils/mixins';
+@import './utils/base';
 
 @import "../../node_modules/bootstrap";
 
@@ -10,6 +11,7 @@
 @import './components/side-nav';
 @import './components/title-font';
 @import './components/custom-card';
+@import './components/service-card';
 
 
 @import './layout/header.scss';
