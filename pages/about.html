@@ -4,13 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
+    <title>關於我們</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
+
+    <div class="primary-bg">
+      <div class="container px-4">
+        <div class="row">
+          <div class="col-12">
+            <div class="aboutBlock mt-80 mb-80 mt-lg-100 mb-lg-100">
+              <h2 class="font-serif text-primary-900 h1 fw-bold text-center mb-40 mb-lg-80">關於我們</h2>
+              <div class="about-imgGroup col-12">
+                <div class="xlBlock d-flex flex-wrap flex-lg-nowrap">
+                  <div class="me-lg-30" data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine">
+                    <img src="/assets/images/about/about-swiper1.png" alt="店內環境" class="xlBlock-img col-lg-8 col-12">
+                  </div>
+                  <div class="xlBlock-textGroup col-lg-4 px-3 px-lg-none" data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="500"
+                  data-aos-duration="500">
+                    <div class="xlBlock-textGroup-01 text-start">
+                      <div class="textGroup-title">
+                        <h3 class="font-serif h4 title-style text-primary-800 mt-4 mb-2">在指尖上的星空</h3>
+                      </div>
+                      <div class="text-secondary-600 mb-4">
+                        <p>我們用精巧專業的手藝，為您打造指尖上璀璨的星空，款式多選擇，讓您在每個場合都有一雙細緻撩人的巧手。</p>
+                      </div>
+                      <div class="text-subLine"></div>
+                    </div>
+                    <div class="xlBlock-textGroup-02 text-start">
+                      <div class="textGroup-title">
+                        <h3 class="font-serif h4 title-style text-primary-800 mt-4 mb-2">我們的專業美甲師</h3>
+                      </div>
+                      <div class="textGroup-name h5 text-primary-700 mb-2">Katrina 卡翠娜</div>
+                      <div class="text-secondary-600 textGroup-02-text mb-4">
+                        <p class=" d-flex">JNA国際ネイリスト3級</p>
+                      </div>
+                      <div class="text-subLine"></div>
+                    </div>
+                    <div class="xlBlock-textGroup-03 text-start">
+                      <div class="textGroup-title">
+                        <h3 class="font-serif h4 title-style text-primary-800 mt-4 mb-2">環境介紹</h3>
+                      </div>
+                      <div class="text-secondary-600 mb-4">
+                        <p>我們有久坐舒適的沙發椅、柔和淡雅光亮的工作室，搭上舒緩放鬆的水晶輕音樂，讓您在這忙碌的時代做指彩的同時也能靜靜無干擾的小歇一番。</p>
+                      </div>
+                      <div class="text-subLine"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sBlock d-md-flex justify-content-md-between flex-wrap flex-lg-nowrap mt-32 gx-2" data-aos="fade-up">
+                  <img src="/assets/images/about/about-swiper4.png" alt="環境照片" class="col-lg-4 col-12 sBlock-img mb-32 mb-lg-0 pe-lg-30">
+                  <img src="/assets/images/about/about-swiper3.png" alt="環境照片" class="col-lg-4 col-12 sBlock-img pe-lg-30">
+                  <img src="/assets/images/about/about-swiper2.png" alt="指甲油照片" class="col-lg-4 sBlock-img d-none d-lg-block">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aboutMap mb-lg-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" data-aos="fade-up">
+            <h1 class="font-serif text-primary-700 h2 fw-bold text-center mb-4 mt-80">指尖上的星空</h1>
+            <div class="title-subLine mb-4"></div>
+            <div class="aboutMap-contact d-flex flex-column justify-content-center align-items-center mb-4">
+              <a href="https://goo.gl/maps/qF1pu1gZUSTed84f9" class="mb-md-3 mb-2 text-center">臺北市信義區奇幻旅程路110之1號 <br class="d-block d-md-none"> (星空站步行5分鐘)</a>
+              <a href="tel:+886900123456" class="">連絡電話：0900123456</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-lg-row gx-2" data-aos="fade-up">
+            <div class="qrCode col-lg-2 pe-lg-4 d-flex flex-lg-column justify-content-lg-between d-none d-lg-block">
+              <a href="#"><img src="/assets/images/about/IG QRcode.png" alt="IG_QRcode" class="pb-4"></a>
+              <a href="#"><img src="/assets/images/about/LINE QRcode.png" alt="LINE_QRcode"></a>
+            </div>
+            <div class="col-12 col-lg-10">
+              <a href="#"><img src="/assets/images/about/map.png" alt="店家地圖" class="about-map"></a>
+            </div>
+            <!-- mobile -->
+            <div class="about-mobileText font-serif fw-bold text-primary-700 m-auto text-center mt-5 mb-4 d-block d-lg-none">
+              <p class="h4">點擊 QR Code 追蹤我！ <br>第一時間取得最新活動優惠</p>
+            </div>
+            <div class="qrCode col-10 d-flex justify-content-between m-auto gx-4 mb-5  d-block d-lg-none">
+              <a href="#"><img src="/assets/images/about/IG QRcode.png" alt="IG_QRcode" class="px-2"></a>
+              <a href="#"><img src="/assets/images/about/LINE QRcode.png" alt="LINE_QRcode"  class="px-2"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+      });
+    </script>
   </body>
 </html>

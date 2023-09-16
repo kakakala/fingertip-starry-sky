@@ -1,0 +1,8 @@
+.login-formBlock{
+    max-width: 912px;
+    max-height: 456px;
+
+    @include mobile{
+        width: 100%;
+    }
+}
