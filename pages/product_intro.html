@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>指彩介紹 | 指尖上的星空</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+
+    <!-- 選項按鈕 -->
+    <div class="container text-center my-40">
+        <button class="button me-3">簡約款</button>
+        <button class="button me-3">時尚款</button>
+        <button class="button me-3">精緻款</button>
+        <button class="button">全部款式</button>
+    </div>
+    <!-- 主要內容 -->
+    <div class="container mb-40">
+        <div class="row gy-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/kakakala/fingertip-starry-sky/main/assets/images/card1.png" class="card-img-top" alt="product-img">
+                    <div class="card-body">
+                      <h5 class="card-title">編號F01</h5>
+                      <p class="card-text">適用：一般聚會</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        手部：1250元　足部：1550元
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/kakakala/fingertip-starry-sky/main/assets/images/card2.png" class="card-img-top" alt="product-img">
+                    <div class="card-body">
+                      <h5 class="card-title">編號F02</h5>
+                      <p class="card-text">適用：音樂會</p>
+                    </div>
+                    <div class="card-footer  text-center">
+                        手部：1250元　足部：1550元
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/kakakala/fingertip-starry-sky/main/assets/images/card3.png" class="card-img-top" alt="product-img">
+                    <div class="card-body">
+                      <h5 class="card-title">編號F03</h5>
+                      <p class="card-text">適用：時尚派對</p>
+                    </div>
+                    <div class="card-footer  text-center">
+                        手部：1250元　足部：1550元
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/kakakala/fingertip-starry-sky/main/assets/images/card4.png" class="card-img-top" alt="product-img">
+                    <div class="card-body">
+                      <h5 class="card-title">編號F04</h5>
+                      <p class="card-text">適用：婚禮場合</p>
+                    </div>
+                    <div class="card-footer  text-center">
+                        手部：1250元　足部：1550元
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/kakakala/fingertip-starry-sky/main/assets/images/card1.png" class="card-img-top" alt="product-img">
+                    <div class="card-body">
+                      <h5 class="card-title">編號F05</h5>
+                      <p class="card-text">適用：與婚紗搭配</p>
+                    </div>
+                    <div class="card-footer  text-center">
+                        手部：1250元　足部：1550元
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/kakakala/fingertip-starry-sky/main/assets/images/card2.png" class="card-img-top" alt="product-img">
+                    <div class="card-body">
+                      <h5 class="card-title">編號F06</h5>
+                      <p class="card-text">適用：搭配酷颯冷清的自己</p>
+                    </div>
+                    <div class="card-footer  text-center">
+                        手部：1250元　足部：1550元
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 換頁按鈕 -->
+    <div class="container mb-40">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link text-primary-800" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link bg-primary-800 text-white active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link text-primary-800" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-primary-800" href="#">3</a></li>
+              <li class="page-item"><a class="page-link text-primary-800" href="#">4</a></li>
+              <li class="page-item">
+                <a class="page-link text-primary-800" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
+        <button class="button mx-auto d-block">立即預約</button>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

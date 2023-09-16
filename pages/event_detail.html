@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動內頁 | 指尖上的星空</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    
+    <!-- 標題 -->
+    <h2 class="display-6 text-center my-40 title primary-700">VIP 會員優惠</h2>
+    <!-- 主要內容 -->
+    <div class="container mb-32">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="eventDetail-img h-100"></div>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>一年制，年費500元</li>
+                    <li>會員期間，消費全面88折 (卸甲除外)</li>
+                    <li>會員生日當月85折 (限會員本人)</li>
+                    <li>集點優惠：1000元累計1點</li>
+                    <li>集滿10點贈手部深層保養一次</li>
+                    <li>認卡不認人，歡迎與親朋好友一起使用</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
