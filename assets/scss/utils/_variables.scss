@@ -709,7 +709,8 @@ $table-bg-scale:              -80% !default;
 
 // scss-docs-start table-loop
 $table-variants: (
-  "primary":    shift-color($primary, $table-bg-scale),
+  // "primary":    shift-color($primary, $table-bg-scale),
+  "primary":    shift-color(#D5ADA7, $table-bg-scale), //custom
   "secondary":  shift-color($secondary, $table-bg-scale),
   "success":    shift-color($success, $table-bg-scale),
   "info":       shift-color($info, $table-bg-scale),
