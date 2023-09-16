@@ -1,0 +1,7 @@
+.date-select > button{
+    margin: 8px;
+    &:focus{
+        background-color: $primary-800;
+        color: $white;
+    }
+}
