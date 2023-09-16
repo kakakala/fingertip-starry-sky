@@ -69,3 +69,22 @@
     }
 
 }
+
+// * C add input-btn
+.input-btn{
+    color: $primary-300;
+    background: $primary-900;
+    border-color: $primary-900;
+
+    &:hover{
+        color: $primary-300;
+        background: $primary-700;
+        border-color: $primary-900;
+    }
+    &:first-child:active{
+        color: $primary-300;
+        background: $primary-900;
+        border-color: $primary-900;
+    }
+    
+}

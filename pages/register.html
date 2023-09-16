@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>會員註冊</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <%- include('./layout/header'); -%>
+
+        <div class="primary-bg">
+        <div class="container px-4">
+            <div class="row">
+            <div class="col-12">
+                <!-- <div class="login-formBlock mt-80 mb-80 mt-lg-100 mb-lg-100 d-flex m-auto"> -->
+                
+                <div class="loginBlock col-lg-7 bg-white mx-auto d-flex flex-column rounded-end my-lg-80 my-40 rounded-2">
+                    <h2 class="font-serif text-primary-900 h1 fw-bold text-center my-40">註冊會員</h2>
+                    <form class="row g-3 needs-validation d-flex flex-column align-items-center" novalidate>
+                        <div class="d-flex justify-content-center flex-wrap flex-md-nowrap">
+                            <div class="col-10 col-md-5 mb-3 text-start position-relative px-2">
+                                <label for="userName" class="form-label text-primary-800">姓名/暱稱</label>
+                                <input type="text" class="form-control placeholder-sm" id="userName" required>
+                                <div class="invalid-feedback position-absolute">
+                                請輸入您的名稱
+                                </div>
+                            </div>
+                            <div class="col-10 col-md-5 mb-3 text-start position-relative px-2">
+                                <label for="userPhone" class="form-label text-primary-800">手機號碼</label>
+                                <input type="tel" class="form-control placeholder-sm" id="userPhone" placeholder="請輸入10位數號碼" required>
+                                <div class="invalid-feedback position-absolute">
+                                請輸入正確手機號碼
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center flex-wrap flex-md-nowrap">
+                            <div class="col-10 col-md-5 mb-3 text-start position-relative px-2">
+                                <label for="password" class="form-label text-primary-800 d-flex justify-content-between">密碼
+                                </label>
+                                <input type="password" class="form-control" id="password" required>
+                                <div class="invalid-feedback position-absolute">
+                                請輸入8位數以上英數字
+                                </div>
+                            </div>
+                            <div class="col-10 col-md-5 mb-3 text-start position-relative px-2">
+                                <label for="checkPassword" class="form-label text-primary-800 d-flex justify-content-between">確認密碼
+                                </label>
+                                <input type="password" class="form-control" id="checkPassword" required>
+                                <div class="invalid-feedback position-absolute">
+                                與您輸入的密碼不同
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-10 mb-3 text-start position-relative px-3">
+                            <label for="userMail" class="form-label text-primary-800">電子信箱</label>
+                            <input type="email" class="form-control placeholder-sm" id="userMail" placeholder="name@example.com" required>
+                            <div class="invalid-feedback position-absolute">
+                            請輸入正確電子信箱
+                            </div>
+                        </div>
+                        <p class="col-10 text-primary-800 text-start mt-3 mb-2 px-3">您的指甲形狀為：</p>
+                        <div class="col-10 text-primary-800 d-flex justify-content-between px-3 m-0 mb-4 flex-wrap flex-md-nowrap">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                橢圓形
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                方圓形
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                方形
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                圓形
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                                <label class="form-check-label" for="flexRadioDefault5">
+                                尖形
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                                <label class="form-check-label" for="flexRadioDefault6">
+                                不確定
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-40">
+                            <button class="btn input-btn" type="submit">確認</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <!-- </div> -->
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+        <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+        </script>
+        <!-- input 驗證提示 -->
+        <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+        </script>
+    </body>
+</html>
