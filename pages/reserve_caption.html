@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約須知 | 指尖上的星空</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+
+    <!-- 選項按鈕 -->
+    <div class="container text-center my-40 disabled-button">
+        <button class="button me-3" disabled>預約須知</button>
+        <button class="button-outline me-3" disabled>選擇方案</button>
+        <button class="button-outline me-3" disabled>預約時段</button>
+        <button class="button-outline" disabled>完成預約</button>
+    </div>
+    <!-- 主要內容 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 border border-black border-2 py-32 mb-40">
+                <ol class="mb-32 h5">
+                    <li>不受理病理甲、灰指甲、甲床炎、甲溝炎。</li>
+                    <li>不受理沒禮貌、不尊重或超級高標準者。</li>
+                    <li>須依狀況款式久坐、不趕時間、不會催促者，依款式不同施作時間大約需要2~3.5小時(含卸甲)，手繪款式施作時間會較長。</li>
+                    <li>禁止攜帶食物吃，可自備飲料(離開時垃圾需自行帶走)。</li>
+                    <li>可攜伴最多一位(請提前告知)，工作室為禁菸空間。</li>
+                    <li>美甲完成後接受拍照並讓工作室公開使用</li>
+                    <li>有疑似或感冒症狀者請提前告知，依情況改約日期或全程配戴口罩。</li>
+                    <li>不臨時取消(若為重大事件必須在 "3天前" 告知)。</li>
+                    <li>不遲到、不放鴿子。(若是重大突發狀況請提前告知，最多保留15分鐘，超過15分鐘，視情況改為單色or基礎保養or取消)。</li>
+                    <li>預約日期7天內若自身、身旁人員有COVID-19接觸者、COVID-19者請勿預約或改約日期。</li>
+                </ol>
+                <p class="display-6 text-center mb-32">以上條件若有不實者，工作室有取消預約的權利</p>
+                <p class="text-primary-800 display-6 text-center">KFJ NAILILG</p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- 下一步按鈕 -->
+    <div class="container mb-32 text-center">
+        <button class="button">確認並繼續</button>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
