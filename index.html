@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -12,8 +13,8 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/fingertip-starry-sky/assets/main-fde69fed.js"></script>
-    <link rel="stylesheet" href="/fingertip-starry-sky/assets/main-83d0f8a1.css">
+    <script type="module" crossorigin src="/fingertip-starry-sky/assets/main-5bd449e8.js"></script>
+    <link rel="stylesheet" href="/fingertip-starry-sky/assets/main-4a157887.css">
   </head>
   <body>
     
@@ -100,7 +101,7 @@
     <!-- 尋找星空 -->
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12"  data-aos="fade-up">
           <div class="my-lg-100 my-60">
             <h2 class="fs-1 fw-bolder text-primary-700 text-center title mb-lg-80">尋找屬於你的星空</h2>
             <div class="row">
@@ -137,7 +138,7 @@
     <div class="bg-primary-200">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12"  data-aos="fade-up">
             <div class="my-lg-100 my-60">
               <h2 class="discount text-primary-900 fw-bolder fs-1 text-center title mb-lg-80 mb-32">促銷優惠
               </h2>
@@ -207,7 +208,7 @@
     <!-- 星落何方 -->
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12"  data-aos="fade-up">
           <div class="mt-lg-100 mt-60 mb-5">
             <h2 class="fs-1 fw-bolder text-primary-700 title mb-32 text-lg-start text-center">
               星落何方
@@ -256,7 +257,7 @@
 
 
     <!-- map -->
-    <div class="container">
+    <div class="container"  data-aos="fade-up"> 
       <div class="mb-lg-100 mb-60 mt-5">
         <map name="map">
           <img class="w-100" src="/fingertip-starry-sky/assets/map-82a02972.png" alt="工作室地點" usemap="#map">
@@ -274,7 +275,7 @@
 
     <!-- 聽聽他們怎麼說 -->
     <div class="bg-primary-200">
-      <div class="container">
+      <div class="container"  data-aos="fade-up">
         <div class="py-lg-100 py-60">
           <h2 class="fs-1 fw-bolder text-primary-700 title mb-lg-80 mb-40 text-center">
             聽聽他們怎麼說
@@ -689,5 +690,30 @@
 </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+      });
+    </script>
   </body>
 </html>

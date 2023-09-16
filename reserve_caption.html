@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>會員登入</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script type="module" crossorigin src="/fingertip-starry-sky/assets/main-5bd449e8.js"></script>
-    <link rel="stylesheet" href="/fingertip-starry-sky/assets/main-4a157887.css">
-  </head>
-  <body>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約須知 | 指尖上的星空</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/fingertip-starry-sky/assets/main-5bd449e8.js"></script>
+  <link rel="stylesheet" href="/fingertip-starry-sky/assets/main-4a157887.css">
+</head>
+<body>
     
 
 <nav class="navbar navbar-light navbar-expand-lg">
@@ -73,43 +74,39 @@
         </div>
     </div>
 </nav>
-    <div class="primary-bg">
-      <div class="container px-4">
-        <div class="row">
-          <div class="col-12 d-flex align-items-center">
-            <div class="login-formBlock mt-80 mb-80 mt-lg-100 mb-lg-100 d-flex m-auto">
-              <img src="/fingertip-starry-sky/assets/f_03-b6c1f3b5.jpg" alt="凝膠指甲照片" class="col-6 rounded-start d-none d-md-block">
-              <div class="loginBlock bg-white col-12 col-md-6 mx-auto d-flex flex-column rounded-end">
-                <h2 class="font-serif text-primary-900 h1 fw-bold text-center my-40">會員登入</h2>
-                <form class="row g-3 needs-validation d-flex flex-column align-items-center" novalidate>
-                  <div class="col-10 col-lg-8 mb-4 text-start position-relative">
-                    <label for="validationCustomUsername" class="form-label text-primary-800">帳號</label>
-                    <input type="email" class="form-control placeholder-sm" id="validationCustomUsername" placeholder="name@example.com" required>
-                    <div class="invalid-feedback position-absolute">
-                      請輸入正確電子信箱
-                    </div>
-                  </div>
-                  <div class="col-10 col-lg-8 mb-4 text-start position-relative">
-                    <label for="inputPassword" class="form-label text-primary-800 d-flex justify-content-between"><p class="m-0">密碼</p>
-                      <a href="#" class="text-secondary-500"><small>忘記密碼</small></a>
-                    </label>
-                    <input type="password" class="form-control" id="inputPassword" required>
-                    <div class="invalid-feedback position-absolute">
-                      請輸入英數字，不區分大小寫
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <button class="btn input-btn" type="submit">登入</button>
-                  </div>
-                  <p class="text-secondary-600"><small>還不是會員? <a href="register.html" class="text-secondary-900">點我註冊！</a></small></p>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- 選項按鈕 -->
+    <div class="container text-center my-40 disabled-button">
+        <button class="button me-3" disabled>預約須知</button>
+        <button class="button-outline me-3" disabled>選擇方案</button>
+        <button class="button-outline me-3" disabled>預約時段</button>
+        <button class="button-outline" disabled>完成預約</button>
     </div>
-
+    <!-- 主要內容 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 border border-black border-2 py-32 mb-40">
+                <ol class="mb-32 h5">
+                    <li>不受理病理甲、灰指甲、甲床炎、甲溝炎。</li>
+                    <li>不受理沒禮貌、不尊重或超級高標準者。</li>
+                    <li>須依狀況款式久坐、不趕時間、不會催促者，依款式不同施作時間大約需要2~3.5小時(含卸甲)，手繪款式施作時間會較長。</li>
+                    <li>禁止攜帶食物吃，可自備飲料(離開時垃圾需自行帶走)。</li>
+                    <li>可攜伴最多一位(請提前告知)，工作室為禁菸空間。</li>
+                    <li>美甲完成後接受拍照並讓工作室公開使用</li>
+                    <li>有疑似或感冒症狀者請提前告知，依情況改約日期或全程配戴口罩。</li>
+                    <li>不臨時取消(若為重大事件必須在 "3天前" 告知)。</li>
+                    <li>不遲到、不放鴿子。(若是重大突發狀況請提前告知，最多保留15分鐘，超過15分鐘，視情況改為單色or基礎保養or取消)。</li>
+                    <li>預約日期7天內若自身、身旁人員有COVID-19接觸者、COVID-19者請勿預約或改約日期。</li>
+                </ol>
+                <p class="display-6 text-center mb-32">以上條件若有不實者，工作室有取消預約的權利</p>
+                <p class="text-primary-800 display-6 text-center">KFJ NAILILG</p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- 下一步按鈕 -->
+    <div class="container mb-32 text-center">
+        <button class="button">確認並繼續</button>
+    </div>
 
     
 <footer class="footer">
@@ -172,55 +169,6 @@
             </span>
         </div>
     </div>
-</footer>
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: 'aos-init', // class applied after initialization
-        animatedClassName: 'aos-animate', // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 120, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 400, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-      });
-    </script>
-    <!-- input 驗證提示 -->
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-        'use strict'
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
-
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms)
-          .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-              if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-              }
-
-              form.classList.add('was-validated')
-            }, false)
-          })
-      })()
-    </script>
-  </body>
+</footer>    
+</body>
 </html>
