@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>可預約時段 | 指尖上的星空</title>
+    <title>可預約時段</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -11,75 +11,80 @@
 <body>
     <%- include('./layout/header'); -%>
 
-    <!-- 主要內容 -->
-    <div class="container my-32">
-        <div class="row">
-            <!-- 日期 -->
-            <div class="col-md-8 date-select">
-                <p>請先選擇預約日期</p>
-                <button class="btn btn-lg btn-outline-secondary">08/15</button>
-                <button class="btn btn-lg btn-outline-secondary">08/16</button>
-                <button class="btn btn-lg btn-secondary" disabled>08/17</button>
-                <button class="btn btn-lg btn-outline-secondary">08/18</button>
-                <button class="btn btn-lg btn-outline-secondary">08/19</button>
-                <button class="btn btn-lg btn-outline-secondary">08/20</button>
-                <button class="btn btn-lg btn-outline-secondary">08/21</button>
-                <button class="btn btn-lg btn-outline-secondary">08/22</button>
-                <button class="btn btn-lg btn-outline-secondary">08/23</button>
-                <button class="btn btn-lg btn-outline-secondary">08/24</button>
-                <button class="btn btn-lg btn-outline-secondary">08/25</button>
-                <button class="btn btn-lg btn-outline-secondary">08/26</button>
-                <button class="btn btn-lg btn-outline-secondary">08/27</button>
-                <button class="btn btn-lg btn-outline-secondary">08/28</button>
-                <button class="btn btn-lg btn-outline-secondary">08/29</button>
-                <button class="btn btn-lg btn-secondary" disabled>08/30</button>
-                <button class="btn btn-lg btn-outline-secondary">08/31</button>
-                <button class="btn btn-lg btn-outline-secondary">09/01</button>
-                <button class="btn btn-lg btn-outline-secondary">09/02</button>
-                <button class="btn btn-lg btn-outline-secondary">09/03</button>
-                <button class="btn btn-lg btn-outline-secondary">09/04</button>
-                <button class="btn btn-lg btn-outline-secondary">09/05</button>
-                <button class="btn btn-lg btn-outline-secondary">09/06</button>
-                <button class="btn btn-lg btn-outline-secondary">09/07</button>
-                <button class="btn btn-lg btn-outline-secondary">09/08</button>
-                <button class="btn btn-lg btn-outline-secondary">09/09</button>
-                <button class="btn btn-lg btn-outline-secondary">09/10</button>
-                <button class="btn btn-lg btn-outline-secondary">09/11</button>
-                <button class="btn btn-lg btn-secondary" disabled>09/12</button>
-                <button class="btn btn-lg btn-outline-secondary">09/13</button>
-                <button class="btn btn-lg btn-outline-secondary">09/14</button>
-                <button class="btn btn-lg btn-outline-secondary">09/15</button>
-                <button class="btn btn-lg btn-outline-secondary">09/16</button>
-                <div class="">
-                    <div class="d-inline-block bg-secondary p-2 me-2"></div><p class="d-inline-block">灰底表示：無可預約時間</p>
+    <div class="primary-bg text-start">
+        <!-- 主要內容 -->
+        <div class="container py-32">
+            <div class="row">
+                <!-- 日期 -->
+                <div class="col-md-8 date-select">
+                    <p>請先選擇預約日期</p>
+                    <button class="btn btn-lg btn-outline-secondary">08/15</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/16</button>
+                    <button class="btn btn-lg btn-secondary" disabled>08/17</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/18</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/19</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/20</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/21</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/22</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/23</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/24</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/25</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/26</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/27</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/28</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/29</button>
+                    <button class="btn btn-lg btn-secondary" disabled>08/30</button>
+                    <button class="btn btn-lg btn-outline-secondary">08/31</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/01</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/02</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/03</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/04</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/05</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/06</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/07</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/08</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/09</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/10</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/11</button>
+                    <button class="btn btn-lg btn-secondary" disabled>09/12</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/13</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/14</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/15</button>
+                    <button class="btn btn-lg btn-outline-secondary">09/16</button>
+                    <div class="">
+                        <div class="d-inline-block bg-secondary p-2 me-2"></div><p class="d-inline-block">灰底表示：無可預約時間</p>
+                    </div>
+                </div>
+                <!-- 時段選擇 -->
+                <div class="col-md-4">
+                    <p>選擇預約時段</p>
+                    <select name="reserve-time" id="" class="w-100 py-2 ps-2">
+                        <option value="">09:00</option>
+                        <option value="">10:00</option>
+                        <option value="">11:00</option>
+                        <option value="">12:00</option>
+                        <option value="">13:00</option>
+                        <option value="">14:00</option>
+                        <option value="">15:00</option>
+                        <option value="">16:00</option>
+                        <option value="">17:00</option>
+                        <option value="">18:00</option>
+                        <option value="">19:00</option>
+                        <option value="">20:00</option>
+                        <option value="">21:00</option>
+                        <option value="">22:00</option>
+                    </select>
                 </div>
             </div>
-            <!-- 時段選擇 -->
-            <div class="col-md-4">
-                <p>選擇預約時段</p>
-                <select name="reserve-time" id="" class="w-100 py-2 ps-2">
-                    <option value="">09:00</option>
-                    <option value="">10:00</option>
-                    <option value="">11:00</option>
-                    <option value="">12:00</option>
-                    <option value="">13:00</option>
-                    <option value="">14:00</option>
-                    <option value="">15:00</option>
-                    <option value="">16:00</option>
-                    <option value="">17:00</option>
-                    <option value="">18:00</option>
-                    <option value="">19:00</option>
-                    <option value="">20:00</option>
-                    <option value="">21:00</option>
-                    <option value="">22:00</option>
-                </select>
-            </div>
+        </div>
+        <!-- 預約按鈕 -->
+        <div class="container pb-40 text-center">
+            <a href="reserve_caption.html">
+                <button class="button">立即預約</button>
+            </a>
         </div>
     </div>
-    <!-- 預約按鈕 -->
-    <div class="container mb-40 text-center">
-        <button class="button">立即預約</button>
-    </div>
+    
 
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>

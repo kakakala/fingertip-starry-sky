@@ -3,4 +3,8 @@
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 500px;
+    @include mobile {
+        height: 200px;
+    }
 }
